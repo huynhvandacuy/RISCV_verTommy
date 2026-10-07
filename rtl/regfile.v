@@ -29,8 +29,17 @@ module regfile(
         end
     end
 
-    assign rs1_data_o = (rs1_addr_i == 5'd0) ? 32'b0 : regs_q[rs1_addr_i];
-    assign rs2_data_o = (rs2_addr_i == 5'd0) ? 32'b0 : regs_q[rs2_addr_i];
+    assign rs1_data_o =
+        (rs1_addr_i == 5'd0) ? 32'd0 :
+        (write_en_i && (rd_addr_i == rs1_addr_i))
+            ? write_data_i
+            : regs_q[rs1_addr_i];
+
+    assign rs2_data_o =
+        (rs2_addr_i == 5'd0) ? 32'd0 :
+        (write_en_i && (rd_addr_i == rs2_addr_i))
+            ? write_data_i
+            : regs_q[rs2_addr_i];
 
     assign debug_x0_o  = regs_q[0];  assign debug_x1_o  = regs_q[1];  assign debug_x2_o  = regs_q[2];  assign debug_x3_o  = regs_q[3];
     assign debug_x4_o  = regs_q[4];  assign debug_x5_o  = regs_q[5];  assign debug_x6_o  = regs_q[6];  assign debug_x7_o  = regs_q[7];

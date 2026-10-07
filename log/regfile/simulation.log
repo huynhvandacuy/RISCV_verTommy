@@ -1,0 +1,48 @@
+# vsim -c -onfinish exit -voptargs="+acc" -l ../log/regfile/simulation.log -wlf ../wave/regfile/wave.wlf work.tb_regfile -do "onerror {quit -f -code 1}; onbreak {quit -f -code 1}; log -r /*; run -all; puts "ERROR: test ended without finish"; quit -f -code 1" 
+# Start time: 16:38:37 on Oct 07,2026
+# Loading sv_std.std
+# Loading work.tb_regfile
+# Loading work.regfile
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 41, found 11.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_regfile/dut File: /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v Line: 25
+# ** Warning: (vsim-3722) /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v(25): [TFMPC] - Missing connection for port 'debug_x1_o'.
+# ** Warning: (vsim-3722) /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v(25): [TFMPC] - Missing connection for port 'debug_x2_o'.
+# ** Warning: (vsim-3722) /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v(25): [TFMPC] - Missing connection for port 'debug_x3_o'.
+# ** Warning: (vsim-3722) /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v(25): [TFMPC] - Missing connection for port 'debug_x4_o'.
+# ** Warning: (vsim-3722) /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v(25): [TFMPC] - Missing connection for port 'debug_x6_o'.
+# ** Warning: (vsim-3722) /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v(25): [TFMPC] - Missing connection for port 'debug_x7_o'.
+# ** Warning: (vsim-3722) /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v(25): [TFMPC] - Missing connection for port 'debug_x8_o'.
+# ** Warning: (vsim-3722) /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v(25): [TFMPC] - Missing connection for port 'debug_x9_o'.
+# ** Warning: (vsim-3722) /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v(25): [TFMPC] - Missing connection for port 'debug_x10_o'.
+# ** Warning: (vsim-3722) /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v(25): [TFMPC] - Missing connection for port 'debug_x11_o'.
+# ** Warning: (vsim-3722) /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v(25): [TFMPC] - Missing connection for port 'debug_x12_o'.
+# ** Warning: (vsim-3722) /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v(25): [TFMPC] - Missing connection for port 'debug_x13_o'.
+# ** Warning: (vsim-3722) /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v(25): [TFMPC] - Missing connection for port 'debug_x14_o'.
+# ** Warning: (vsim-3722) /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v(25): [TFMPC] - Missing connection for port 'debug_x15_o'.
+# ** Warning: (vsim-3722) /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v(25): [TFMPC] - Missing connection for port 'debug_x16_o'.
+# ** Warning: (vsim-3722) /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v(25): [TFMPC] - Missing connection for port 'debug_x17_o'.
+# ** Warning: (vsim-3722) /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v(25): [TFMPC] - Missing connection for port 'debug_x18_o'.
+# ** Warning: (vsim-3722) /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v(25): [TFMPC] - Missing connection for port 'debug_x19_o'.
+# ** Warning: (vsim-3722) /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v(25): [TFMPC] - Missing connection for port 'debug_x20_o'.
+# ** Warning: (vsim-3722) /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v(25): [TFMPC] - Missing connection for port 'debug_x21_o'.
+# ** Warning: (vsim-3722) /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v(25): [TFMPC] - Missing connection for port 'debug_x22_o'.
+# ** Warning: (vsim-3722) /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v(25): [TFMPC] - Missing connection for port 'debug_x23_o'.
+# ** Warning: (vsim-3722) /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v(25): [TFMPC] - Missing connection for port 'debug_x24_o'.
+# ** Warning: (vsim-3722) /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v(25): [TFMPC] - Missing connection for port 'debug_x25_o'.
+# ** Warning: (vsim-3722) /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v(25): [TFMPC] - Missing connection for port 'debug_x26_o'.
+# ** Warning: (vsim-3722) /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v(25): [TFMPC] - Missing connection for port 'debug_x27_o'.
+# ** Warning: (vsim-3722) /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v(25): [TFMPC] - Missing connection for port 'debug_x28_o'.
+# ** Warning: (vsim-3722) /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v(25): [TFMPC] - Missing connection for port 'debug_x29_o'.
+# ** Warning: (vsim-3722) /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v(25): [TFMPC] - Missing connection for port 'debug_x30_o'.
+# ** Warning: (vsim-3722) /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v(25): [TFMPC] - Missing connection for port 'debug_x31_o'.
+# onerror {quit -f -code 1}
+#  Warning: onerror command for use within macro
+#  onbreak {quit -f -code 1}
+#  Warning: onbreak command for use within macro
+#  log -r /*
+#  run -all
+# PASS: tb_regfile, 114 checks
+# ** Note: $finish    : /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v(203)
+#    Time: 1772 ns  Iteration: 0  Instance: /tb_regfile
+# End time: 16:38:37 on Oct 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 31
