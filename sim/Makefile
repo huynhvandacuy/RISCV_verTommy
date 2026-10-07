@@ -32,7 +32,7 @@ endif
 endif
 endif
 
-TB_NAME   ?= test_bench
+TB_NAME   ?= tb_alu
 TESTNAME  ?= $(TB_NAME)
 FILELIST  ?= compile.f
 RADIX     ?= hexadecimal
@@ -45,8 +45,11 @@ VSIM      ?= vsim
 VLOG_FLAGS ?= -sv
 VSIM_FLAGS ?= -voptargs=+acc
 
-OUT_DIR := out/$(TESTNAME)
-WAVEFILE := $(OUT_DIR)/wave.wlf
+BUILD_DIR := ../build
+WORK_DIR  := $(BUILD_DIR)/work
+LOG_DIR   := ../log/$(TESTNAME)
+WAVE_DIR  := ../wave/$(TESTNAME)
+WAVEFILE  := $(WAVE_DIR)/wave.wlf
 
 .PHONY: all all_wave build run gui wave clean help
 
@@ -62,11 +65,11 @@ all: build run
 # build and run are independent. all runs them in order (.NOTPARALLEL).
 build:
 	@test -f "$(FILELIST)" || { echo "Missing file list: $(FILELIST)"; exit 1; }
-	@mkdir -p "$(OUT_DIR)"
-	@if [ ! -d work ]; then $(VLIB) work; fi
+	@mkdir -p "$(BUILD_DIR)" "$(LOG_DIR)" "$(WAVE_DIR)"
+	@if [ ! -d "$(WORK_DIR)" ]; then $(VLIB) "$(WORK_DIR)"; fi
 	@if [ ! -f modelsim.ini ]; then $(VMAP) -c; fi
-	$(VMAP) work work
-	$(VLOG) $(VLOG_FLAGS) -work work -f "$(FILELIST)" 2>&1 | tee "$(OUT_DIR)/compile.log"
+	$(VMAP) work "$(WORK_DIR)"
+	$(VLOG) $(VLOG_FLAGS) -work work -f "$(FILELIST)" 2>&1 | tee "$(LOG_DIR)/compile.log"
 
 # Testbench convention:
 #   success -> $display("PASS"); $finish;
@@ -75,19 +78,19 @@ build:
 # -onfinish exit exits normally on $finish; errors/breaks return nonzero.
 # If run -all returns without $finish, treat the run as incomplete.
 run:
-	@test -d work || { echo "No work library: run make build first."; exit 1; }
-	@mkdir -p "$(OUT_DIR)"
+	@test -d "$(WORK_DIR)" || { echo "No work library: run make build first."; exit 1; }
+	@mkdir -p "$(BUILD_DIR)" "$(LOG_DIR)" "$(WAVE_DIR)"
 	$(VSIM) -c -onfinish exit $(VSIM_FLAGS) \
-		-l "$(OUT_DIR)/simulation.log" -wlf "$(WAVEFILE)" \
+		-l "$(LOG_DIR)/simulation.log" -wlf "$(WAVEFILE)" \
 		work.$(TB_NAME) $(PLUSARGS) \
 		-do 'onerror {quit -f -code 1}; onbreak {quit -f -code 1}; log -r /*; run -all; puts "ERROR: test ended without finish"; quit -f -code 1'
 
 # Live debug: load the compiled design without rebuilding.
 gui:
-	@test -d work || { echo "No work library: run make build first."; exit 1; }
-	@mkdir -p "$(OUT_DIR)"
+	@test -d "$(WORK_DIR)" || { echo "No work library: run make build first."; exit 1; }
+	@mkdir -p "$(BUILD_DIR)" "$(LOG_DIR)" "$(WAVE_DIR)"
 	$(VSIM) -gui -onfinish stop $(VSIM_FLAGS) \
-		-l "$(OUT_DIR)/gui.log" -wlf "$(OUT_DIR)/gui.wlf" \
+		-l "$(LOG_DIR)/gui.log" -wlf "$(WAVE_DIR)/gui.wlf" \
 		work.$(TB_NAME) $(PLUSARGS) \
 		-do "log -r /*; add wave -r /$(TB_NAME)/*; radix $(RADIX)"
 
@@ -96,13 +99,18 @@ wave:
 	@test -f "$(WAVEFILE)" || { echo "No waveform: run this test first."; exit 1; }
 	$(VSIM) -i -view "$(WAVEFILE)" \
 		-do "view wave; add wave -r /*; radix $(RADIX); wave zoom full"
-		
+
 all_wave: all
 	$(MAKE) wave TB_NAME="$(TB_NAME)" TESTNAME="$(TESTNAME)"
 
-# Keep source files, file lists, and modelsim.ini settings.
+# Remove shared compiled library and selected test outputs only.
+# Keep sources, reports, file lists, and modelsim.ini.
+# There is no automatic timeout: add a watchdog in the testbench.
 clean:
-	rm -rf -- work out vsim.dbg
+	rm -rf -- "$(WORK_DIR)"
+	rm -f -- "$(LOG_DIR)/compile.log" "$(LOG_DIR)/simulation.log" "$(LOG_DIR)/gui.log"
+	rm -f -- "$(WAVEFILE)" "$(WAVE_DIR)/gui.wlf"
+	rm -rf -- vsim.dbg
 	rm -f -- transcript
 
 help:
