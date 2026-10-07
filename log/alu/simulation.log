@@ -1,5 +1,5 @@
 # vsim -c -onfinish exit -voptargs="+acc" -l ../log/alu/simulation.log -wlf ../wave/alu/wave.wlf work.tb_alu -do "onerror {quit -f -code 1}; onbreak {quit -f -code 1}; log -r /*; run -all; puts "ERROR: test ended without finish"; quit -f -code 1" 
-# Start time: 14:42:35 on Oct 07,2026
+# Start time: 16:15:40 on Oct 07,2026
 # Loading sv_std.std
 # Loading work.tb_alu
 # Loading work.alu
@@ -9,8 +9,8 @@
 #  Warning: onbreak command for use within macro
 #  log -r /*
 #  run -all
-# PASS: ADD 5 + 7 = 12
-# ** Note: $finish    : ../tb/tb_alu.v(26)
-#    Time: 1 ns  Iteration: 0  Instance: /tb_alu
-# End time: 14:42:35 on Oct 07,2026, Elapsed time: 0:00:00
+# PASS: tb_alu, 12 checks
+# ** Note: $finish    : /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_alu.v(50)
+#    Time: 12 ns  Iteration: 0  Instance: /tb_alu
+# End time: 16:15:41 on Oct 07,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

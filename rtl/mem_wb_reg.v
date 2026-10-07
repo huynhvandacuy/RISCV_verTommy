@@ -1,32 +1,32 @@
-module MEM_WB(
-    input             clk,
-    input             rst_n,
+module mem_wb_reg(
+    input             clk_i,
+    input             rst_ni,
 
-    input             reg_write_in,
-    input             mem_to_reg_in,
-    input      [31:0] mem_data_in,
-    input      [31:0] alu_result_in,
-    input      [ 4:0] rd_in,
+    input             reg_write_en_i,
+    input             wb_sel_mem_i,
+    input      [31:0] load_data_i,
+    input      [31:0] exec_result_i,
+    input      [ 4:0] rd_addr_i,
 
-    output reg        reg_write_out,
-    output reg        mem_to_reg_out,
-    output reg [31:0] mem_data_out,
-    output reg [31:0] alu_result_out,
-    output reg [ 4:0] rd_out
+    output reg        reg_write_en_o,
+    output reg        wb_sel_mem_o,
+    output reg [31:0] load_data_o,
+    output reg [31:0] exec_result_o,
+    output reg [ 4:0] rd_addr_o
 );
-    always @(posedge clk or negedge rst_n) begin
-        if (!rst_n) begin
-            reg_write_out   <= 1'b0;
-            mem_to_reg_out  <= 1'b0;
-            mem_data_out    <= 32'b0;
-            alu_result_out  <= 32'b0;
-            rd_out          <= 5'b0;
+    always @(posedge clk_i or negedge rst_ni) begin
+        if (!rst_ni) begin
+            reg_write_en_o   <= 1'b0;
+            wb_sel_mem_o  <= 1'b0;
+            load_data_o    <= 32'b0;
+            exec_result_o  <= 32'b0;
+            rd_addr_o          <= 5'b0;
         end else begin
-            reg_write_out   <= reg_write_in;
-            mem_to_reg_out  <= mem_to_reg_in;
-            mem_data_out    <= mem_data_in;
-            alu_result_out  <= alu_result_in;
-            rd_out          <= rd_in;
+            reg_write_en_o   <= reg_write_en_i;
+            wb_sel_mem_o  <= wb_sel_mem_i;
+            load_data_o    <= load_data_i;
+            exec_result_o  <= exec_result_i;
+            rd_addr_o          <= rd_addr_i;
         end
     end
 endmodule

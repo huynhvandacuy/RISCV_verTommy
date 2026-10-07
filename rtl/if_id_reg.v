@@ -1,25 +1,25 @@
-module IF_ID(
-    input             clk,
-    input             rst_n,
-    input      [31:0] ins,
-    input      [31:0] pc_in,
-    input             flush,
-    input             write_en,
-    output reg [31:0] ins_out,
-    output reg [31:0] pc_out
+module if_id_reg(
+    input             clk_i,
+    input             rst_ni,
+    input      [31:0] instr_i,
+    input      [31:0] pc_i,
+    input             flush_i,
+    input             write_en_i,
+    output reg [31:0] instr_o,
+    output reg [31:0] pc_o
 );
     localparam NOP = 32'h0000_0013; // addi x0,x0,0
 
-    always @(posedge clk or negedge rst_n) begin
-        if(!rst_n) begin
-            ins_out <= NOP;
-            pc_out  <= 32'h0000_0000;
-        end else if(flush) begin
-            ins_out <= NOP;
-            pc_out  <= 32'h0000_0000;
-        end else if(write_en) begin
-            ins_out <= ins;
-            pc_out  <= pc_in;
+    always @(posedge clk_i or negedge rst_ni) begin
+        if(!rst_ni) begin
+            instr_o <= NOP;
+            pc_o  <= 32'h0000_0000;
+        end else if(flush_i) begin
+            instr_o <= NOP;
+            pc_o  <= 32'h0000_0000;
+        end else if(write_en_i) begin
+            instr_o <= instr_i;
+            pc_o  <= pc_i;
         end
     end
 endmodule

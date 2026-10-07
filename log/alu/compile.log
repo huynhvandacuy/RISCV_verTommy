@@ -1,13 +1,27 @@
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 14:42:34 on Oct 07,2026
+Start time: 16:15:29 on Oct 07,2026
 vlog -sv -work work -f compile.f 
--- Compiling module top
+-- Compiling module alu_control
 -- Compiling module alu
--- Compiling module test_bench
+-- Compiling module control_unit
+-- Compiling module data_memory
+-- Compiling module ex_mem_reg
+-- Compiling module forwarding_unit
+-- Compiling module id_ex_reg
+-- Compiling module if_id_reg
+-- Compiling module imm_gen
+-- Compiling module instr_fields
+-- Compiling module instr_mem
+-- Compiling module mem_wb_reg
+-- Compiling module mul_div_unit
+-- Compiling module pc
+-- Compiling module regfile
+-- Compiling module top
 -- Compiling module tb_alu
+-- Compiling module test_bench
 
 Top level modules:
-	test_bench
 	tb_alu
-End time: 14:42:34 on Oct 07,2026, Elapsed time: 0:00:00
+	test_bench
+End time: 16:15:29 on Oct 07,2026, Elapsed time: 0:00:00
 Errors: 0, Warnings: 0

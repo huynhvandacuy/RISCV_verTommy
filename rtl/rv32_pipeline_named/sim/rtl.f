@@ -1,0 +1,16 @@
+../rtl/alu.v
+../rtl/alu_control.v
+../rtl/control_unit.v
+../rtl/data_memory.v
+../rtl/ex_mem_reg.v
+../rtl/forwarding_unit.v
+../rtl/id_ex_reg.v
+../rtl/if_id_reg.v
+../rtl/imm_gen.v
+../rtl/instr_fields.v
+../rtl/instr_mem.v
+../rtl/mem_wb_reg.v
+../rtl/mul_div_unit.v
+../rtl/pc.v
+../rtl/regfile.v
+../rtl/top.v
