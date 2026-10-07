@@ -1,0 +1,53 @@
+
+
+##################################################################################################
+# Makefile for ModelSim / Questa simulation
+# Author  : Tommy Huynh
+# Purpose : Compile, run, and debug RTL simulation
+##################################################################################################
+
+# -----------------------------
+# User-configurable variables
+# -----------------------------
+# Name of simulation log file (without extension)
+TESTNAME 	?= test_adder
+
+
+# Top-level testbench module/entity name
+TB_NAME 	?= test_bench
+
+# Waveform display radix: binary | hex | decimal
+RADIX		?= decimal
+
+#==============================
+all: build run
+
+all_wave: build run wave
+
+build:
+	vlib work
+	vmap work work
+	vlog -f compile.f | tee compile.log
+run:
+	vsim -debugDB -l $(TESTNAME).log -voptargs=+acc -assertdebug -c $(TB_NAME) -do "log -r /*;run -all;"
+wave:
+	vsim -i -view vsim.wlf -do "add wave vsim:/$(TB_NAME)/*; radix -$(RADIX)" &
+clean:
+	rm -rf work
+	rm -rf vsim.dbg
+	rm -rf *.ini
+	rm -rf *.log
+	rm -rf *.wlf
+	rm -rf transcript
+	rm -rf modelsim.ini.bak
+	rm -rf vish_stacktrace.*
+help:
+	@echo ""
+	@echo "****************************************"
+	@echo "** make clean: clean all compiled data"
+	@echo "** make build: build the design"
+	@echo "** make run  : run simulation"
+	@echo "** make all  : build and run simulation"
+	@echo "** make wave : open waveform"
+	@echo "****************************************"
+	@echo ""
