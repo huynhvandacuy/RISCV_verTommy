@@ -11,7 +11,7 @@ cModel Technology
 Z0 d/media/tommyhuynh/LearningDocuments/RISCV_v2/sim
 valu
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1791701912
+Z2 !s110 1791706078
 !i10b 1
 !s100 5BSYNI<?9>R><LW>=C7nf2
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,8 +28,8 @@ Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1791701912.000000
-!s107 /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/test_bench.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_core_smoke.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_alu.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/top.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/regfile.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/pc.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/mul_div_unit.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/mem_wb_reg.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/instr_mem.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/instr_fields.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/imm_gen.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/if_id_reg.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/id_ex_reg.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/forwarding_unit.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/ex_mem_reg.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/data_memory.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/control_unit.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/alu.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/alu_control.v|
+Z7 !s108 1791706078.000000
+!s107 /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/test_bench.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_core_smoke.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_core_memtest.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_core_ctrltest.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_core_alutest.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_alu.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/top.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/regfile.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/pc.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/mul_div_unit.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/mem_wb_reg.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/instr_mem.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/instr_fields.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/imm_gen.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/if_id_reg.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/id_ex_reg.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/forwarding_unit.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/ex_mem_reg.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/data_memory.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/control_unit.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/alu.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/alu_control.v|
 Z8 !s90 -sv|-work|work|-f|compile.f|
 !i113 1
 Z9 o-sv -work work
@@ -54,7 +54,7 @@ r1
 !s85 0
 31
 R7
-Z11 !s107 /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/test_bench.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_core_smoke.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_alu.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/top.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/regfile.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/pc.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/mul_div_unit.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/mem_wb_reg.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/instr_mem.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/instr_fields.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/imm_gen.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/if_id_reg.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/id_ex_reg.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/forwarding_unit.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/ex_mem_reg.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/data_memory.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/control_unit.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/alu.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/alu_control.v|
+Z11 !s107 /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/test_bench.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_core_smoke.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_core_memtest.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_core_ctrltest.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_core_alutest.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_alu.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/top.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/regfile.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/pc.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/mul_div_unit.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/mem_wb_reg.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/instr_mem.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/instr_fields.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/imm_gen.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/if_id_reg.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/id_ex_reg.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/forwarding_unit.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/ex_mem_reg.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/data_memory.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/control_unit.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/alu.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/alu_control.v|
 R8
 !i113 1
 R9
@@ -399,6 +399,81 @@ Z12 w1791364078
 F/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_alu.v
 !i122 0
 L0 2 56
+R6
+r1
+!s85 0
+31
+R7
+R11
+R8
+!i113 1
+R9
+R10
+vtb_core_alutest
+R1
+R2
+!i10b 1
+!s100 ]oZkWcH__M1Z__Hd2N3RR3
+R3
+IozzQ4Y3U9G=MfV3mOBD5_0
+R4
+S1
+R0
+w1791668592
+8/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_core_alutest.v
+F/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_core_alutest.v
+!i122 0
+L0 2 314
+R6
+r1
+!s85 0
+31
+R7
+R11
+R8
+!i113 1
+R9
+R10
+vtb_core_ctrltest
+R1
+R2
+!i10b 1
+!s100 T_oo[PK1]FAIz;cfnRFI32
+R3
+I5km2G<fPG]8KRFzTJT8Gf0
+R4
+S1
+R0
+w1791677852
+8/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_core_ctrltest.v
+F/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_core_ctrltest.v
+!i122 0
+L0 2 138
+R6
+r1
+!s85 0
+31
+R7
+R11
+R8
+!i113 1
+R9
+R10
+vtb_core_memtest
+R1
+R2
+!i10b 1
+!s100 WX:RnFZCbh5SkS10FGzHP1
+R3
+IaM_J8>J[P^BaFTAa1USUP0
+R4
+S1
+R0
+w1791702812
+8/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_core_memtest.v
+F/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_core_memtest.v
+!i122 0
+L0 3 130
 R6
 r1
 !s85 0

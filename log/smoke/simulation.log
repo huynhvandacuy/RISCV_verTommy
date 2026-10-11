@@ -1,0 +1,58 @@
+# vsim -c -onfinish exit -voptargs="+acc" -l ../log/smoke/simulation.log -wlf ../wave/smoke/wave.wlf work.tb_core_smoke -do "onerror {quit -f -code 1}; onbreak {quit -f -code 1}; log -r /*; run -all; puts "ERROR: test ended without finish"; quit -f -code 1" 
+# Start time: 15:07:59 on Oct 11,2026
+# Loading sv_std.std
+# Loading work.tb_core_smoke
+# Loading work.top
+# Loading work.pc
+# Loading work.instr_mem
+# Loading work.if_id_reg
+# Loading work.instr_fields
+# Loading work.imm_gen
+# Loading work.control_unit
+# Loading work.regfile
+# Loading work.id_ex_reg
+# Loading work.forwarding_unit
+# Loading work.alu_control
+# Loading work.alu
+# Loading work.mul_div_unit
+# Loading work.ex_mem_reg
+# Loading work.data_memory
+# Loading work.mem_wb_reg
+# onerror {quit -f -code 1}
+#  Warning: onerror command for use within macro
+#  onbreak {quit -f -code 1}
+#  Warning: onbreak command for use within macro
+#  log -r /*
+#  run -all
+# PC=80000000 INS=00600093
+# PC=80000004 INS=00000013
+# PC=80000008 INS=00000013
+# PC=8000000c INS=00008193
+# PC=80000010 INS=00000013
+# PASS: WB #0 x1=6
+# PC=80000014 INS=00000013
+# PC=80000018 INS=00000013
+# PC=8000001c INS=00600213
+# PASS: WB #1 x3=6
+# PC=80000020 INS=004202b3
+# PC=80000024 INS=00020333
+# PC=80000028 INS=00100393
+# PC=8000002c INS=00238393
+# PASS: WB #2 x4=6
+# PC=80000030 INS=00738433
+# PASS: WB #3 x5=12
+# PC=80000034 INS=00100493
+# PASS: WB #4 x6=6
+# PC=80000038 INS=00000013
+# PASS: WB #5 x7=1
+# PC=8000003c INS=00000013
+# PASS: WB #6 x7=3
+# PC=80000040 INS=00000013
+# PASS: WB #7 x8=6
+# PC=80000044 INS=00000013
+# PASS: WB #8 x9=1
+# PASS: tb_core_smoke, 41 checks, WB/ID and forwarding
+# ** Note: $finish    : /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_core_smoke.v(103)
+#    Time: 211 ns  Iteration: 0  Instance: /tb_core_smoke
+# End time: 15:07:59 on Oct 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

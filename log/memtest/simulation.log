@@ -1,0 +1,116 @@
+# vsim -c -onfinish exit -voptargs="+acc" -l ../log/memtest/simulation.log -wlf ../wave/memtest/wave.wlf work.tb_core_memtest -do "onerror {quit -f -code 1}; onbreak {quit -f -code 1}; log -r /*; run -all; puts "ERROR: test ended without finish"; quit -f -code 1" 
+# Start time: 15:08:00 on Oct 11,2026
+# Loading sv_std.std
+# Loading work.tb_core_memtest
+# Loading work.top
+# Loading work.pc
+# Loading work.instr_mem
+# Loading work.if_id_reg
+# Loading work.instr_fields
+# Loading work.imm_gen
+# Loading work.control_unit
+# Loading work.regfile
+# Loading work.id_ex_reg
+# Loading work.forwarding_unit
+# Loading work.alu_control
+# Loading work.alu
+# Loading work.mul_div_unit
+# Loading work.ex_mem_reg
+# Loading work.data_memory
+# Loading work.mem_wb_reg
+# onerror {quit -f -code 1}
+#  Warning: onerror command for use within macro
+#  onbreak {quit -f -code 1}
+#  Warning: onbreak command for use within macro
+#  log -r /*
+#  run -all
+# PC=80000000 INS=00000093
+# PC=80000004 INS=12300113
+# PC=80000008 INS=0020a023
+# PC=8000000c INS=0000a183
+# PC=80000010 INS=00318233
+# PASS: WB #0 x1=00000000
+# PC=80000014 INS=0000a283
+# PASS: WB #1 x2=00000123
+# PC=80000014 INS=0000a283
+# PC=80000018 INS=0050a223
+# PASS: WB #2 x3=00000123
+# PC=8000001c INS=00800313
+# PC=8000001c INS=00800313
+# PASS: WB #3 x4=00000246
+# PC=80000020 INS=0060a623
+# PASS: WB #4 x5=00000123
+# PC=80000024 INS=00c0a383
+# PC=80000028 INS=0023a023
+# PC=8000002c INS=0080a403
+# PASS: WB #5 x6=00000008
+# PC=8000002c INS=0080a403
+# PC=80000030 INS=f8000493
+# PASS: WB #6 x7=00000008
+# PC=80000034 INS=00908823
+# PC=80000038 INS=009088a3
+# PC=8000003c INS=00908923
+# PASS: WB #7 x8=00000123
+# PC=80000040 INS=009089a3
+# PASS: WB #8 x9=ffffff80
+# PC=80000044 INS=0100a503
+# PC=80000048 INS=01008583
+# PC=8000004c INS=0100c603
+# PC=80000050 INS=01108583
+# PC=80000054 INS=0110c603
+# PASS: WB #9 x10=80808080
+# PC=80000058 INS=01208583
+# PASS: WB #10 x11=ffffff80
+# PC=8000005c INS=0120c603
+# PASS: WB #11 x12=00000080
+# PC=80000060 INS=01308583
+# PASS: WB #12 x11=ffffff80
+# PC=80000064 INS=0130c603
+# PASS: WB #13 x12=00000080
+# PC=80000068 INS=fff00693
+# PASS: WB #14 x11=ffffff80
+# PC=8000006c INS=00d0aa23
+# PASS: WB #15 x12=00000080
+# PC=80000070 INS=12300713
+# PASS: WB #16 x11=ffffff80
+# PC=80000074 INS=00e08a23
+# PASS: WB #17 x12=00000080
+# PC=80000078 INS=0140a783
+# PASS: WB #18 x13=ffffffff
+# PC=8000007c INS=00e09b23
+# PC=80000080 INS=0140a803
+# PASS: WB #19 x14=00000123
+# PC=80000084 INS=01409883
+# PC=80000088 INS=0140d903
+# PASS: WB #20 x15=ffffff23
+# PC=8000008c INS=01609983
+# PC=80000090 INS=0160da03
+# PASS: WB #21 x16=0123ff23
+# PC=80000094 INS=00d09c23
+# PASS: WB #22 x17=ffffff23
+# PC=80000098 INS=00d09d23
+# PASS: WB #23 x18=0000ff23
+# PC=8000009c INS=01809a83
+# PASS: WB #24 x19=00000123
+# PC=800000a0 INS=0180db03
+# PASS: WB #25 x20=00000123
+# PC=800000a4 INS=01a09b83
+# PC=800000a8 INS=01a0dc03
+# PC=800000ac INS=00100f93
+# PASS: WB #26 x21=ffffffff
+# PC=800000b0 INS=00000013
+# PASS: WB #27 x22=0000ffff
+# PC=800000b4 INS=00000013
+# PASS: WB #28 x23=ffffffff
+# PC=800000b8 INS=00000013
+# PASS: WB #29 x24=0000ffff
+# PC=800000bc INS=00000013
+# PASS: WB #30 x31=00000001
+# PC=800000c0 INS=00000013
+# PC=800000c4 INS=00000013
+# PC=800000c8 INS=00000013
+# PASS: tb_core_memtest, 87 checks, 31 WB, 13 stores, 3 load-use stalls
+# ** Note: $finish    : /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_core_memtest.v(127)
+#    Time: 571 ns  Iteration: 0  Instance: /tb_core_memtest
+# End time: 15:08:00 on Oct 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
