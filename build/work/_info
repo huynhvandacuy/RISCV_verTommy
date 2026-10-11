@@ -11,7 +11,7 @@ cModel Technology
 Z0 d/media/tommyhuynh/LearningDocuments/RISCV_v2/sim
 valu
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1791464111
+Z2 !s110 1791701912
 !i10b 1
 !s100 5BSYNI<?9>R><LW>=C7nf2
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,8 +28,8 @@ Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1791464111.000000
-!s107 /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/test_bench.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_alu.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/top.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/regfile.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/pc.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/mul_div_unit.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/mem_wb_reg.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/instr_mem.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/instr_fields.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/imm_gen.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/if_id_reg.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/id_ex_reg.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/forwarding_unit.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/ex_mem_reg.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/data_memory.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/control_unit.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/alu.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/alu_control.v|
+Z7 !s108 1791701912.000000
+!s107 /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/test_bench.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_core_smoke.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_alu.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/top.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/regfile.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/pc.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/mul_div_unit.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/mem_wb_reg.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/instr_mem.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/instr_fields.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/imm_gen.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/if_id_reg.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/id_ex_reg.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/forwarding_unit.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/ex_mem_reg.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/data_memory.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/control_unit.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/alu.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/alu_control.v|
 Z8 !s90 -sv|-work|work|-f|compile.f|
 !i113 1
 Z9 o-sv -work work
@@ -54,7 +54,7 @@ r1
 !s85 0
 31
 R7
-Z11 !s107 /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/test_bench.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_alu.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/top.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/regfile.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/pc.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/mul_div_unit.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/mem_wb_reg.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/instr_mem.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/instr_fields.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/imm_gen.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/if_id_reg.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/id_ex_reg.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/forwarding_unit.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/ex_mem_reg.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/data_memory.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/control_unit.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/alu.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/alu_control.v|
+Z11 !s107 /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/test_bench.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_regfile.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_core_smoke.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_alu.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/top.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/regfile.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/pc.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/mul_div_unit.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/mem_wb_reg.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/instr_mem.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/instr_fields.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/imm_gen.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/if_id_reg.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/id_ex_reg.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/forwarding_unit.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/ex_mem_reg.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/data_memory.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/control_unit.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/alu.v|/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../rtl/alu_control.v|
 R8
 !i113 1
 R9
@@ -409,9 +409,34 @@ R8
 !i113 1
 R9
 R10
+vtb_core_smoke
+R1
+R2
+!i10b 1
+!s100 ;G0=j7o3?2[0W;3gYI9Nm2
+R3
+IJ<Gh5WAcB5URgkE08T6LB1
+R4
+S1
+R0
+w1791366232
+8/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_core_smoke.v
+F/media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_core_smoke.v
+!i122 0
+L0 4 107
+R6
+r1
+!s85 0
+31
+R7
+R11
+R8
+!i113 1
+R9
+R10
 vtb_regfile
 R1
-Z13 !s110 1791464112
+R2
 !i10b 1
 !s100 jDK>?5Zi]cKEd_IYJ>h@j0
 R3
@@ -436,7 +461,7 @@ R9
 R10
 vtest_bench
 R1
-R13
+R2
 !i10b 1
 !s100 OA7YK3cXJmS?g[=CRefHW0
 R3
