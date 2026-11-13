@@ -1,5 +1,5 @@
 # vsim -c -onfinish exit -voptargs="+acc" -l ../log/riscv_add/simulation.log -wlf ../wave/riscv_add/wave.wlf work.tb_riscv_add -do "onerror {quit -f -code 1}; onbreak {quit -f -code 1}; log -r /*; run -all; puts "ERROR: test ended without finish"; quit -f -code 1" 
-# Start time: 15:25:44 on Oct 11,2026
+# Start time: 15:45:39 on Oct 11,2026
 # Loading sv_std.std
 # Loading work.tb_riscv_add
 # Loading work.top
@@ -491,5 +491,5 @@
 # PASS: tb_riscv_add, rv32ui-add, 464 cycles
 # ** Note: $finish    : /media/tommyhuynh/LearningDocuments/RISCV_v2/sim/../tb/tb_riscv_add.v(55)
 #    Time: 4665 ns  Iteration: 1  Instance: /tb_riscv_add
-# End time: 15:25:45 on Oct 11,2026, Elapsed time: 0:00:01
+# End time: 15:45:39 on Oct 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
